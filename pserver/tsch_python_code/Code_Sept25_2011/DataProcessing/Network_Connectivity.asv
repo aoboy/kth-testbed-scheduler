@@ -1,0 +1,68 @@
+function stats = Network_Connectivity(NoNodes, path2data, institution, no_ch)
+% NETWORK_CONNECTIVITY: scans the folder with trace files and returns 
+% information on the connectivity of the nodes. The code is applied to read
+% files with diferent name, distinguished by the institution that produced
+% them. 
+% The function requires the following mandatory inputs:
+%   1. NoNodes:     is the number of nodes in the network
+%   2. Path2data:   is the path to the data logs
+%   3. INSTITUTION: identifies the institution that produced the data and 
+%                   can take the folowing value:
+%
+%                  'Stanford' (files named TX+RX.txt)
+%                  'KTH'      (files named BinchannelsCClinkTX-RX.txt)
+%                             where TX and RX refer to the transmitter 
+and receiver ID, respectively,
+% while CC denotes the number of channels. 
+%
+% Copiright @ Pablo Soldati 2011
+
+my_dir = pwd;
+cd(path2data);
+
+if nargin>3         
+    new_folder = sprintf('%dchannels',no_ch);       % required for TSCH measurements
+    cd(new_folder);
+end
+
+ListOfLinks = ls;    
+ListOfLinks = ListOfLinks(3:end,:);                 % the function "ls" incluses . and ..
+
+NoLinks = size(ListOfLinks, 1);
+
+TxRx_ConnectMat = zeros(NoNodes, NoNodes);
+switch institution, 
+    case 'KTH',
+        for ll = 1:NoLinks,
+            file_name = ListOfLinks(ll,:);
+            pos1 = strfind(file_name, '-');
+            pos2 = strfind(file_name,'.');
+            tx   = str2double(file_name((pos1-2):(pos1-1)));  % this implies that all TX ID have 2 digits.
+            rx   = str2double(file_name((pos1+1):(pos2-1)));
+            
+            TxRx_ConnectMat(tx,rx) = 1;
+        end
+    case 'Stanford'
+        for ll = 1:NoLinks,
+            file_name = ListOfLinks(ll,:);
+            pos1 = strfind(file_name, '+');
+            pos2 = strfind(file_name,'.');
+            tx   = str2double(file_name(1:(pos1-1)));
+            rx   = str2double(file_name((pos1+1):(pos2-1)));
+
+            TxRx_ConnectMat(tx,rx) = 1;
+        end
+    otherwise
+        error(fprintf('Unknown institution: %s', institution))
+end
+
+for nn = 1:NoNodes,
+    Node(nn).neighbors = find(TxRx_ConnectMat(nn,:)==1);
+end
+
+stats.NoNodes         = NoNodes;
+stats.NoLinks         = NoLinks;
+stats.TxRx_ConnectMat = sparse(TxRx_ConnectMat);
+stats.Node_Stats      = Node;
+cd(my_dir);
+return;

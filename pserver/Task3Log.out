@@ -1,0 +1,685 @@
+2011/10/11 01:44:18 >>=========     GENERATING MASKS/CASES     =============
+11 . 12 3841 11 . 13 3842 11 . 14 3843 11 . 15 3844 11 . 16 3845 11 . 17 3846 11 . 18 3847 11 . 19 3848 11 . 20 3849 11 . 21 3850 11 . 22 3851 11 . 23 3852 11 . 24 3853 11 . 25 3854 11 . 26 3855 
+
+12 . 13 3858 12 . 14 3859 12 . 15 3860 12 . 16 3861 12 . 17 3862 12 . 18 3863 12 . 19 3864 12 . 20 3865 12 . 21 3866 12 . 22 3867 12 . 23 3868 12 . 24 3869 12 . 25 3870 12 . 26 3871 
+
+13 . 14 3875 13 . 15 3876 13 . 16 3877 13 . 17 3878 13 . 18 3879 13 . 19 3880 13 . 20 3881 13 . 21 3882 13 . 22 3883 13 . 23 3884 13 . 24 3885 13 . 25 3886 13 . 26 3887 
+
+14 . 15 3892 14 . 16 3893 14 . 17 3894 14 . 18 3895 14 . 19 3896 14 . 20 3897 14 . 21 3898 14 . 22 3899 14 . 23 3900 14 . 24 3901 14 . 25 3902 14 . 26 3903 
+
+15 . 16 3909 15 . 17 3910 15 . 18 3911 15 . 19 3912 15 . 20 3913 15 . 21 3914 15 . 22 3915 15 . 23 3916 15 . 24 3917 15 . 25 3918 15 . 26 3919 
+
+16 . 17 3926 16 . 18 3927 16 . 19 3928 16 . 20 3929 16 . 21 3930 16 . 22 3931 16 . 23 3932 16 . 24 3933 16 . 25 3934 16 . 26 3935 
+
+17 . 18 3943 17 . 19 3944 17 . 20 3945 17 . 21 3946 17 . 22 3947 17 . 23 3948 17 . 24 3949 17 . 25 3950 17 . 26 3951 
+
+18 . 19 3960 18 . 20 3961 18 . 21 3962 18 . 22 3963 18 . 23 3964 18 . 24 3965 18 . 25 3966 18 . 26 3967 
+
+19 . 20 3977 19 . 21 3978 19 . 22 3979 19 . 23 3980 19 . 24 3981 19 . 25 3982 19 . 26 3983 
+
+20 . 21 3994 20 . 22 3995 20 . 23 3996 20 . 24 3997 20 . 25 3998 20 . 26 3999 
+
+21 . 22 4011 21 . 23 4012 21 . 24 4013 21 . 25 4014 21 . 26 4015 
+
+22 . 23 4028 22 . 24 4029 22 . 25 4030 22 . 26 4031 
+
+23 . 24 4045 23 . 25 4046 23 . 26 4047 
+
+24 . 25 4062 24 . 26 4063 
+
+25 . 26 4079 
+
+2011/10/11 01:44:18 
+>>=========RUNNING EXPERIMENT TASK 3a,b,c) =============
+==>>Adding Gateway:  192.168.200.10
+==>>Adding Gateway:  192.168.200.11
+==>>Adding Gateway:  192.168.200.12
+==>>Adding Gateway:  192.168.200.13
+2011/10/11 01:44:18 ===>Creating an Initial IHEX
+2011/10/11 01:44:18 ===>Creating Network....
+===>Creating Nodes on: 192.168.200.10
+===>Creating Nodes on: 192.168.200.11===>Creating Nodes on: 
+192.168.200.13
+===>Creating Nodes on: 192.168.200.12
+*---------------------------*
+| GATEWAY:  192.168.200.10  |
+*---------------------------------------------------------*
+| NodeName      devName       devID   NodeID    LocationID|
+*---------------------------------------------------------*
+XBS0LACQ 	/dev/ttyUSB0 	0 	1   	KITCHEN
+XBS0LAFQ 	/dev/ttyUSB1 	1 	2   	CORR-A
+XBS0K5UN 	/dev/ttyUSB2 	2 	3   	A607
+XBS0K2QI 	/dev/ttyUSB3 	3 	4   	A609
+XBS0LAAD 	/dev/ttyUSB4 	4 	5   	A615
+XBS0KI6I 	/dev/ttyUSB5 	5 	6   	A613
+XBS0KHZZ 	/dev/ttyUSB6 	6 	7   	FRONT-PRINT
+*---------------------------------------------------------*
+2011/10/11 01:44:41 ===>Done creating gateway nodes.. on 192.168.200.10  in  22.8624918461 seconds
+*---------------------------*
+| GATEWAY:  192.168.200.12  |
+*---------------------------------------------------------*
+| NodeName      devName       devID   NodeID    LocationID|
+*---------------------------------------------------------*
+XBS0KIBM 	/dev/ttyUSB0 	0 	16   	CORR-B
+XBS0KHXY 	/dev/ttyUSB1 	1 	17   	CORR-B
+XBS0KHYF 	/dev/ttyUSB2 	2 	18   	B618
+XBS0SGA4 	/dev/ttyUSB3 	3 	19   	B620
+XBS14SR2 	/dev/ttyUSB4 	4 	20   	C628
+XBS0LABO 	/dev/ttyUSB5 	5 	21   	C628
+XBS5GZPR 	/dev/ttyUSB6 	6 	22   	A618
+*---------------------------------------------------------*
+2011/10/11 01:44:41 ===>Done creating gateway nodes.. on 192.168.200.12  in  23.2562050819 seconds
+*---------------------------*
+| GATEWAY:  192.168.200.11  |
+*---------------------------------------------------------*
+| NodeName      devName       devID   NodeID    LocationID|
+*---------------------------------------------------------*
+XBS0KHZF 	/dev/ttyUSB0 	0 	8   	CORR-B
+XBS0KI3E 	/dev/ttyUSB1 	1 	9   	KITCHEN
+XBS0JZLB 	/dev/ttyUSB2 	2 	10   	B606
+XBS0KIF6 	/dev/ttyUSB3 	3 	11   	B604
+XBS4RXBF 	/dev/ttyUSB4 	4 	12   	CORR-B
+XBS0LAE8 	/dev/ttyUSB5 	5 	13   	B614
+XBS0LB3V 	/dev/ttyUSB6 	6 	14   	B614
+XBS5GZJR 	/dev/ttyUSB7 	7 	15   	B610
+*---------------------------------------------------------*
+2011/10/11 01:44:44 ===>Done creating gateway nodes.. on 192.168.200.11  in  26.4025688171 seconds
+*---------------------------*
+| GATEWAY:  192.168.200.13  |
+*---------------------------------------------------------*
+| NodeName      devName       devID   NodeID    LocationID|
+*---------------------------------------------------------*
+XBS4RXWK 	/dev/ttyUSB0 	0 	32   	A618
+MFTFL9B1 	/dev/ttyUSB1 	1 	29   	A619
+XBS4RVSD 	/dev/ttyUSB2 	2 	28   	A621
+MFTFJ1CU 	/dev/ttyUSB3 	3 	30   	CORR-A
+MFTFL6WA 	/dev/ttyUSB4 	4 	31   	MEETING-R
+MFTFIZD7 	/dev/ttyUSB5 	5 	26   	CORR-A
+XBS5GZ78 	/dev/ttyUSB6 	6 	27   	CORR-A
+XBS5GZ7U 	/dev/ttyUSB7 	7 	24   	A625
+MFTFL9LZ 	/dev/ttyUSB8 	8 	25   	A627
+XBS5H6MF 	/dev/ttyUSB9 	9 	23   	CORR-A
+*---------------------------------------------------------*
+2011/10/11 01:44:51 ===>Done creating gateway nodes.. on 192.168.200.13  in  32.8975510597 seconds
+2011/10/11 01:44:51 ===> Full network created in: 32.8988540173  seconds
+===>Creating all binaries
+2011/10/11 01:44:51 ===>Starting Experiment
+2011/10/11 01:44:51 ===>Creating folder  Task3/Tsch20_26/
+2011/10/11 01:44:51 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 01:44:51 ===>Programming GWs
+2011/10/11 01:45:22 ===>Done programming Rxs on  192.168.200.12  in  30.8498520851 seconds
+2011/10/11 01:45:25 2011/10/11 01:45:25 ===>Done programming Rxs on  192.168.200.11  in  33.7818670273 ===>Done programming Rxs on  192.168.200.10  in  33.7816910744 secondsseconds
+
+2011/10/11 01:45:30 ===>Done programming Rxs on  192.168.200.13  in  39.6593310833 seconds
+2011/10/11 01:45:30 ===>Programming all nodes lasted for:  39.6600270271
+2011/10/11 01:45:33 ===>Programming SenderNode: 1
+2011/10/11 01:46:01 ===>Starting Transmission on:  1
+2011/10/11 01:46:04 ==>waiting for node  1  to finish TX in  108  seconds
+2011/10/11 01:46:14 ==>waiting for node  1  to finish TX in  98  seconds
+2011/10/11 01:46:24 ==>waiting for node  1  to finish TX in  88  seconds
+2011/10/11 01:46:34 ==>waiting for node  1  to finish TX in  78  seconds
+2011/10/11 01:46:44 ==>waiting for node  1  to finish TX in  68  seconds
+2011/10/11 01:46:54 ==>waiting for node  1  to finish TX in  58  seconds
+2011/10/11 01:47:04 ==>waiting for node  1  to finish TX in  48  seconds
+2011/10/11 01:47:14 ==>waiting for node  1  to finish TX in  38  seconds
+2011/10/11 01:47:24 ==>waiting for node  1  to finish TX in  28  seconds
+2011/10/11 01:47:34 ==>waiting for node  1  to finish TX in  18  seconds
+2011/10/11 01:47:44 ==>waiting for node  1  to finish TX in  8  seconds
+2011/10/11 01:47:52 ==>Retrieving Data from GATEWAYS......
+2011/10/11 01:47:57 save data to file ./results/Task3/Tsch20_26/link1-16.txt
+2011/10/11 01:47:57 save data to file ./results/Task3/Tsch20_26/link1-2.txt
+2011/10/11 01:47:57 save data to file ./results/Task3/Tsch20_26/link1-32.txt
+2011/10/11 01:47:57 save data to file ./results/Task3/Tsch20_26/link1-8.txt
+2011/10/11 01:48:01 save data to file ./results/Task3/Tsch20_26/link1-17.txt
+2011/10/11 01:48:01 save data to file ./results/Task3/Tsch20_26/link1-29.txt
+2011/10/11 01:48:01 save data to file ./results/Task3/Tsch20_26/link1-3.txt
+2011/10/11 01:48:01 save data to file ./results/Task3/Tsch20_26/link1-9.txt
+2011/10/11 01:48:05 save data to file ./results/Task3/Tsch20_26/link1-18.txt
+2011/10/11 01:48:05 save data to file ./results/Task3/Tsch20_26/link1-28.txt
+2011/10/11 01:48:05 save data to file ./results/Task3/Tsch20_26/link1-4.txt
+2011/10/11 01:48:05 save data to file ./results/Task3/Tsch20_26/link1-10.txt
+2011/10/11 01:48:09 save data to file ./results/Task3/Tsch20_26/link1-19.txt
+2011/10/11 01:48:09 save data to file ./results/Task3/Tsch20_26/link1-30.txt
+2011/10/11 01:48:09 save data to file ./results/Task3/Tsch20_26/link1-5.txt
+2011/10/11 01:48:09 save data to file ./results/Task3/Tsch20_26/link1-11.txt
+2011/10/11 01:48:12 save data to file ./results/Task3/Tsch20_26/link1-20.txt
+2011/10/11 01:48:13 save data to file ./results/Task3/Tsch20_26/link1-31.txt
+2011/10/11 01:48:13 save data to file ./results/Task3/Tsch20_26/link1-6.txt
+2011/10/11 01:48:13 save data to file ./results/Task3/Tsch20_26/link1-12.txt
+2011/10/11 01:48:16 save data to file ./results/Task3/Tsch20_26/link1-21.txt
+2011/10/11 01:48:17 save data to file ./results/Task3/Tsch20_26/link1-26.txt
+2011/10/11 01:48:17 save data to file ./results/Task3/Tsch20_26/link1-7.txt
+2011/10/11 01:48:17 ===>Node: 192.168.200.10  download done! in  24.9878120422
+2011/10/11 01:48:17 save data to file ./results/Task3/Tsch20_26/link1-13.txt
+2011/10/11 01:48:20 save data to file ./results/Task3/Tsch20_26/link1-22.txt
+2011/10/11 01:48:20 ===>Node: 192.168.200.12  download done! in  27.6053330898
+2011/10/11 01:48:21 save data to file ./results/Task3/Tsch20_26/link1-27.txt
+2011/10/11 01:48:21 save data to file ./results/Task3/Tsch20_26/link1-14.txt
+2011/10/11 01:48:25 save data to file ./results/Task3/Tsch20_26/link1-24.txt
+2011/10/11 01:48:25 save data to file ./results/Task3/Tsch20_26/link1-15.txt
+2011/10/11 01:48:25 ===>Node: 192.168.200.11  download done! in  32.5863008499
+2011/10/11 01:48:28 save data to file ./results/Task3/Tsch20_26/link1-25.txt
+2011/10/11 01:48:32 save data to file ./results/Task3/Tsch20_26/link1-23.txt
+2011/10/11 01:48:32 ===>Node: 192.168.200.13  download done! in  39.9303910732
+2011/10/11 01:48:32 ===>Downloading data Files on Gateways lasted for:  39.9318499565
+2011/10/11 01:48:32 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 01:48:32 ===>Programming GWs
+2011/10/11 01:49:03 ===>Done programming Rxs on  192.168.200.12  in  30.9283537865 seconds
+2011/10/11 01:49:06 ===>Done programming Rxs on  192.168.200.11  in  33.6141371727 seconds
+2011/10/11 01:49:06 ===>Done programming Rxs on  192.168.200.10  in  33.6142761707 seconds
+2011/10/11 01:49:12 ===>Done programming Rxs on  192.168.200.13  in  39.2809779644 seconds
+2011/10/11 01:49:12 ===>Programming all nodes lasted for:  39.2815639973
+2011/10/11 01:49:15 ===>Programming SenderNode: 2
+2011/10/11 01:49:42 ===>Starting Transmission on:  2
+2011/10/11 01:49:45 ==>waiting for node  2  to finish TX in  108  seconds
+2011/10/11 01:49:55 ==>waiting for node  2  to finish TX in  98  seconds
+2011/10/11 01:50:05 ==>waiting for node  2  to finish TX in  88  seconds
+2011/10/11 01:50:15 ==>waiting for node  2  to finish TX in  78  seconds
+2011/10/11 01:50:25 ==>waiting for node  2  to finish TX in  68  seconds
+2011/10/11 01:50:35 ==>waiting for node  2  to finish TX in  58  seconds
+2011/10/11 01:50:45 ==>waiting for node  2  to finish TX in  48  seconds
+2011/10/11 01:50:55 ==>waiting for node  2  to finish TX in  38  seconds
+2011/10/11 01:51:05 ==>waiting for node  2  to finish TX in  28  seconds
+2011/10/11 01:51:15 ==>waiting for node  2  to finish TX in  18  seconds
+2011/10/11 01:51:25 ==>waiting for node  2  to finish TX in  8  seconds
+2011/10/11 01:51:33 ==>Retrieving Data from GATEWAYS......
+2011/10/11 01:51:38 save data to file ./results/Task3/Tsch20_26/link2-16.txt
+2011/10/11 01:51:38 save data to file ./results/Task3/Tsch20_26/link2-1.txt
+2011/10/11 01:51:38 save data to file ./results/Task3/Tsch20_26/link2-8.txt
+2011/10/11 01:51:38 save data to file ./results/Task3/Tsch20_26/link2-32.txt
+2011/10/11 01:51:42 save data to file ./results/Task3/Tsch20_26/link2-17.txt
+2011/10/11 01:51:43 save data to file ./results/Task3/Tsch20_26/link2-3.txt
+2011/10/11 01:51:43 save data to file ./results/Task3/Tsch20_26/link2-9.txt
+2011/10/11 01:51:43 save data to file ./results/Task3/Tsch20_26/link2-29.txt
+2011/10/11 01:51:47 save data to file ./results/Task3/Tsch20_26/link2-18.txt
+2011/10/11 01:51:47 save data to file ./results/Task3/Tsch20_26/link2-28.txt
+2011/10/11 01:51:47 save data to file ./results/Task3/Tsch20_26/link2-4.txt
+2011/10/11 01:51:48 save data to file ./results/Task3/Tsch20_26/link2-10.txt
+2011/10/11 01:51:51 save data to file ./results/Task3/Tsch20_26/link2-19.txt
+2011/10/11 01:51:51 save data to file ./results/Task3/Tsch20_26/link2-30.txt
+2011/10/11 01:51:52 save data to file ./results/Task3/Tsch20_26/link2-5.txt
+2011/10/11 01:51:52 save data to file ./results/Task3/Tsch20_26/link2-11.txt
+2011/10/11 01:51:55 save data to file ./results/Task3/Tsch20_26/link2-20.txt
+2011/10/11 01:51:56 save data to file ./results/Task3/Tsch20_26/link2-31.txt
+2011/10/11 01:51:56 save data to file ./results/Task3/Tsch20_26/link2-6.txt
+2011/10/11 01:51:57 save data to file ./results/Task3/Tsch20_26/link2-12.txt
+2011/10/11 01:51:59 save data to file ./results/Task3/Tsch20_26/link2-21.txt
+2011/10/11 01:52:00 save data to file ./results/Task3/Tsch20_26/link2-26.txt
+2011/10/11 01:52:01 save data to file ./results/Task3/Tsch20_26/link2-7.txt
+2011/10/11 01:52:01 ===>Node: 192.168.200.10  download done! in  27.2186222076
+2011/10/11 01:52:01 save data to file ./results/Task3/Tsch20_26/link2-13.txt
+2011/10/11 01:52:03 save data to file ./results/Task3/Tsch20_26/link2-22.txt
+2011/10/11 01:52:03 ===>Node: 192.168.200.12  download done! in  29.7763679028
+2011/10/11 01:52:05 save data to file ./results/Task3/Tsch20_26/link2-27.txt
+2011/10/11 01:52:05 save data to file ./results/Task3/Tsch20_26/link2-14.txt
+2011/10/11 01:52:09 save data to file ./results/Task3/Tsch20_26/link2-24.txt
+2011/10/11 01:52:10 save data to file ./results/Task3/Tsch20_26/link2-15.txt
+2011/10/11 01:52:10 ===>Node: 192.168.200.11  download done! in  36.5875689983
+2011/10/11 01:52:13 save data to file ./results/Task3/Tsch20_26/link2-25.txt
+2011/10/11 01:52:17 save data to file ./results/Task3/Tsch20_26/link2-23.txt
+2011/10/11 01:52:17 ===>Node: 192.168.200.13  download done! in  43.553155899
+2011/10/11 01:52:17 ===>Downloading data Files on Gateways lasted for:  43.5541238785
+2011/10/11 01:52:17 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 01:52:17 ===>Programming GWs
+2011/10/11 01:52:46 ===>Done programming Rxs on  192.168.200.10  in  28.8429670334 seconds
+2011/10/11 01:52:48 ===>Done programming Rxs on  192.168.200.12  in  30.9576060772 seconds
+2011/10/11 01:52:50 ===>Done programming Rxs on  192.168.200.11  in  33.3747529984 seconds
+2011/10/11 01:52:57 ===>Done programming Rxs on  192.168.200.13  in  39.5948810577 seconds
+2011/10/11 01:52:57 ===>Programming all nodes lasted for:  39.5954799652
+2011/10/11 01:53:00 ===>Programming SenderNode: 3
+2011/10/11 01:53:27 ===>Starting Transmission on:  3
+2011/10/11 01:53:30 ==>waiting for node  3  to finish TX in  108  seconds
+2011/10/11 01:53:40 ==>waiting for node  3  to finish TX in  98  seconds
+2011/10/11 01:53:50 ==>waiting for node  3  to finish TX in  88  seconds
+2011/10/11 01:54:00 ==>waiting for node  3  to finish TX in  78  seconds
+2011/10/11 01:54:10 ==>waiting for node  3  to finish TX in  68  seconds
+2011/10/11 01:54:20 ==>waiting for node  3  to finish TX in  58  seconds
+2011/10/11 01:54:31 ==>waiting for node  3  to finish TX in  48  seconds
+2011/10/11 01:54:41 ==>waiting for node  3  to finish TX in  38  seconds
+2011/10/11 01:54:51 ==>waiting for node  3  to finish TX in  28  seconds
+2011/10/11 01:55:01 ==>waiting for node  3  to finish TX in  18  seconds
+2011/10/11 01:55:11 ==>waiting for node  3  to finish TX in  8  seconds
+2011/10/11 01:55:19 ==>Retrieving Data from GATEWAYS......
+2011/10/11 01:55:23 save data to file ./results/Task3/Tsch20_26/link3-16.txt
+2011/10/11 01:55:23 save data to file ./results/Task3/Tsch20_26/link3-32.txt
+2011/10/11 01:55:23 save data to file ./results/Task3/Tsch20_26/link3-1.txt
+2011/10/11 01:55:23 save data to file ./results/Task3/Tsch20_26/link3-8.txt
+2011/10/11 01:55:27 save data to file ./results/Task3/Tsch20_26/link3-29.txt
+2011/10/11 01:55:27 save data to file ./results/Task3/Tsch20_26/link3-17.txt
+2011/10/11 01:55:28 save data to file ./results/Task3/Tsch20_26/link3-2.txt
+2011/10/11 01:55:28 save data to file ./results/Task3/Tsch20_26/link3-9.txt
+2011/10/11 01:55:31 save data to file ./results/Task3/Tsch20_26/link3-28.txt
+2011/10/11 01:55:31 save data to file ./results/Task3/Tsch20_26/link3-18.txt
+2011/10/11 01:55:32 save data to file ./results/Task3/Tsch20_26/link3-10.txt
+2011/10/11 01:55:32 save data to file ./results/Task3/Tsch20_26/link3-4.txt
+2011/10/11 01:55:35 save data to file ./results/Task3/Tsch20_26/link3-19.txt
+2011/10/11 01:55:35 save data to file ./results/Task3/Tsch20_26/link3-30.txt
+2011/10/11 01:55:36 save data to file ./results/Task3/Tsch20_26/link3-11.txt
+2011/10/11 01:55:37 save data to file ./results/Task3/Tsch20_26/link3-5.txt
+2011/10/11 01:55:39 save data to file ./results/Task3/Tsch20_26/link3-20.txt
+2011/10/11 01:55:39 save data to file ./results/Task3/Tsch20_26/link3-31.txt
+2011/10/11 01:55:40 save data to file ./results/Task3/Tsch20_26/link3-12.txt
+2011/10/11 01:55:41 save data to file ./results/Task3/Tsch20_26/link3-6.txt
+2011/10/11 01:55:43 save data to file ./results/Task3/Tsch20_26/link3-21.txt
+2011/10/11 01:55:43 save data to file ./results/Task3/Tsch20_26/link3-26.txt
+2011/10/11 01:55:44 save data to file ./results/Task3/Tsch20_26/link3-13.txt
+2011/10/11 01:55:46 save data to file ./results/Task3/Tsch20_26/link3-7.txt
+2011/10/11 01:55:46 ===>Node: 192.168.200.10  download done! in  27.2706429958
+2011/10/11 01:55:46 save data to file ./results/Task3/Tsch20_26/link3-22.txt
+2011/10/11 01:55:47 ===>Node: 192.168.200.12  download done! in  27.9818091393
+2011/10/11 01:55:47 save data to file ./results/Task3/Tsch20_26/link3-27.txt
+2011/10/11 01:55:48 save data to file ./results/Task3/Tsch20_26/link3-14.txt
+2011/10/11 01:55:51 save data to file ./results/Task3/Tsch20_26/link3-24.txt
+2011/10/11 01:55:52 save data to file ./results/Task3/Tsch20_26/link3-15.txt
+2011/10/11 01:55:52 ===>Node: 192.168.200.11  download done! in  33.1667599678
+2011/10/11 01:55:55 save data to file ./results/Task3/Tsch20_26/link3-25.txt
+2011/10/11 01:55:58 save data to file ./results/Task3/Tsch20_26/link3-23.txt
+2011/10/11 01:55:58 ===>Node: 192.168.200.13  download done! in  39.9182550907
+2011/10/11 01:55:58 ===>Downloading data Files on Gateways lasted for:  39.9232079983
+2011/10/11 01:55:58 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 01:55:58 ===>Programming GWs
+2011/10/11 01:56:32 ===>Done programming Rxs on  192.168.200.11  in  33.5742709637 seconds
+2011/10/11 01:56:38 ===>Done programming Rxs on  192.168.200.13  in  39.8551709652 seconds2011/10/11 01:56:38 ===>Done programming Rxs on  192.168.200.10  in  39.8548028469 seconds
+
+2011/10/11 01:56:38 ===>Done programming Rxs on  192.168.200.12  in  39.8560070992 seconds
+2011/10/11 01:56:38 ===>Programming all nodes lasted for:  39.856566906
+2011/10/11 01:56:41 ===>Programming SenderNode: 4
+2011/10/11 01:57:09 ===>Starting Transmission on:  4
+2011/10/11 01:57:12 ==>waiting for node  4  to finish TX in  108  seconds
+2011/10/11 01:57:22 ==>waiting for node  4  to finish TX in  98  seconds
+2011/10/11 01:57:32 ==>waiting for node  4  to finish TX in  88  seconds
+2011/10/11 01:57:42 ==>waiting for node  4  to finish TX in  78  seconds
+2011/10/11 01:57:52 ==>waiting for node  4  to finish TX in  68  seconds
+2011/10/11 01:58:02 ==>waiting for node  4  to finish TX in  58  seconds
+2011/10/11 01:58:12 ==>waiting for node  4  to finish TX in  48  seconds
+2011/10/11 01:58:22 ==>waiting for node  4  to finish TX in  38  seconds
+2011/10/11 01:58:32 ==>waiting for node  4  to finish TX in  28  seconds
+2011/10/11 01:58:42 ==>waiting for node  4  to finish TX in  18  seconds
+2011/10/11 01:58:52 ==>waiting for node  4  to finish TX in  8  seconds
+2011/10/11 01:59:00 ==>Retrieving Data from GATEWAYS......
+2011/10/11 01:59:05 save data to file ./results/Task3/Tsch20_26/link4-32.txt
+2011/10/11 01:59:05 save data to file ./results/Task3/Tsch20_26/link4-1.txt
+2011/10/11 01:59:05 save data to file2011/10/11 01:59:05  ./results/Task3/Tsch20_26/link4-8.txt
+save data to file ./results/Task3/Tsch20_26/link4-16.txt
+2011/10/11 01:59:09 save data to file ./results/Task3/Tsch20_26/link4-29.txt
+2011/10/11 01:59:09 save data to file ./results/Task3/Tsch20_26/link4-2.txt
+2011/10/11 01:59:10 save data to file ./results/Task3/Tsch20_26/link4-9.txt
+2011/10/11 01:59:10 save data to file ./results/Task3/Tsch20_26/link4-17.txt
+2011/10/11 01:59:13 save data to file ./results/Task3/Tsch20_26/link4-28.txt
+2011/10/11 01:59:14 save data to file ./results/Task3/Tsch20_26/link4-18.txt
+2011/10/11 01:59:14 save data to file ./results/Task3/Tsch20_26/link4-10.txt
+2011/10/11 01:59:14 save data to file ./results/Task3/Tsch20_26/link4-3.txt
+2011/10/11 01:59:17 save data to file ./results/Task3/Tsch20_26/link4-30.txt
+2011/10/11 01:59:18 save data to file ./results/Task3/Tsch20_26/link4-19.txt
+2011/10/11 01:59:19 save data to file2011/10/11 01:59:19  ./results/Task3/Tsch20_26/link4-11.txt
+save data to file ./results/Task3/Tsch20_26/link4-5.txt
+2011/10/11 01:59:22 save data to file ./results/Task3/Tsch20_26/link4-31.txt
+2011/10/11 01:59:22 save data to file ./results/Task3/Tsch20_26/link4-20.txt
+2011/10/11 01:59:24 save data to file ./results/Task3/Tsch20_26/link4-12.txt
+2011/10/11 01:59:24 save data to file ./results/Task3/Tsch20_26/link4-6.txt
+2011/10/11 01:59:26 save data to file ./results/Task3/Tsch20_26/link4-26.txt
+2011/10/11 01:59:26 save data to file ./results/Task3/Tsch20_26/link4-21.txt
+2011/10/11 01:59:28 save data to file ./results/Task3/Tsch20_26/link4-13.txt
+2011/10/11 01:59:28 save data to file ./results/Task3/Tsch20_26/link4-7.txt
+2011/10/11 01:59:28 ===>Node: 192.168.200.10  download done! in  27.9898729324
+2011/10/11 01:59:29 save data to file ./results/Task3/Tsch20_26/link4-27.txt
+2011/10/11 01:59:30 save data to file ./results/Task3/Tsch20_26/link4-22.txt
+2011/10/11 01:59:30 ===>Node: 192.168.200.12  download done! in  29.5403909683
+2011/10/11 01:59:31 save data to file ./results/Task3/Tsch20_26/link4-14.txt
+2011/10/11 01:59:33 save data to file ./results/Task3/Tsch20_26/link4-24.txt
+2011/10/11 01:59:36 save data to file ./results/Task3/Tsch20_26/link4-15.txt
+2011/10/11 01:59:36 ===>Node: 192.168.200.11  download done! in  35.5770821571
+2011/10/11 01:59:37 save data to file ./results/Task3/Tsch20_26/link4-25.txt
+2011/10/11 01:59:41 save data to file ./results/Task3/Tsch20_26/link4-23.txt
+2011/10/11 01:59:41 ===>Node: 192.168.200.13  download done! in  40.6706719398
+2011/10/11 01:59:41 ===>Downloading data Files on Gateways lasted for:  40.6713879108
+2011/10/11 01:59:41 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 01:59:41 ===>Programming GWs
+2011/10/11 02:00:12 ===>Done programming Rxs on  192.168.200.12  in  30.9757139683 seconds
+2011/10/11 02:00:14 2011/10/11 02:00:14 ===>Done programming Rxs on  192.168.200.10  in  33.5580580235 ===>Done programming Rxs on seconds 192.168.200.11 
+ in  33.5579791069 seconds
+2011/10/11 02:00:21 ===>Done programming Rxs on  192.168.200.13  in  39.6276810169 seconds
+2011/10/11 02:00:21 ===>Programming all nodes lasted for:  39.6291267872
+2011/10/11 02:00:24 ===>Programming SenderNode: 5
+2011/10/11 02:00:51 ===>Starting Transmission on:  5
+2011/10/11 02:00:54 ==>waiting for node  5  to finish TX in  108  seconds
+2011/10/11 02:01:04 ==>waiting for node  5  to finish TX in  98  seconds
+2011/10/11 02:01:14 ==>waiting for node  5  to finish TX in  88  seconds
+2011/10/11 02:01:24 ==>waiting for node  5  to finish TX in  78  seconds
+2011/10/11 02:01:34 ==>waiting for node  5  to finish TX in  68  seconds
+2011/10/11 02:01:44 ==>waiting for node  5  to finish TX in  58  seconds
+2011/10/11 02:01:55 ==>waiting for node  5  to finish TX in  48  seconds
+2011/10/11 02:02:05 ==>waiting for node  5  to finish TX in  38  seconds
+2011/10/11 02:02:15 ==>waiting for node  5  to finish TX in  28  seconds
+2011/10/11 02:02:25 ==>waiting for node  5  to finish TX in  18  seconds
+2011/10/11 02:02:35 ==>waiting for node  5  to finish TX in  8  seconds
+2011/10/11 02:02:43 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:02:47 save data to file ./results/Task3/Tsch20_26/link5-1.txt
+2011/10/11 02:02:47 save data to file ./results/Task3/Tsch20_26/link5-8.txt
+2011/10/11 02:02:48 save data to file ./results/Task3/Tsch20_26/link5-32.txt
+2011/10/11 02:02:48 save data to file ./results/Task3/Tsch20_26/link5-16.txt
+2011/10/11 02:02:51 save data to file ./results/Task3/Tsch20_26/link5-9.txt
+2011/10/11 02:02:51 save data to file ./results/Task3/Tsch20_26/link5-2.txt
+2011/10/11 02:02:52 save data to file ./results/Task3/Tsch20_26/link5-29.txt
+2011/10/11 02:02:52 save data to file ./results/Task3/Tsch20_26/link5-17.txt
+2011/10/11 02:02:55 save data to file ./results/Task3/Tsch20_26/link5-10.txt
+2011/10/11 02:02:56 save data to file ./results/Task3/Tsch20_26/link5-3.txt
+2011/10/11 02:02:56 save data to file ./results/Task3/Tsch20_26/link5-18.txt
+2011/10/11 02:02:57 save data to file ./results/Task3/Tsch20_26/link5-28.txt
+2011/10/11 02:02:59 save data to file ./results/Task3/Tsch20_26/link5-11.txt
+2011/10/11 02:03:00 save data to file ./results/Task3/Tsch20_26/link5-4.txt
+2011/10/11 02:03:01 save data to file ./results/Task3/Tsch20_26/link5-19.txt
+2011/10/11 02:03:01 save data to file ./results/Task3/Tsch20_26/link5-30.txt
+2011/10/11 02:03:03 save data to file ./results/Task3/Tsch20_26/link5-12.txt
+2011/10/11 02:03:04 save data to file ./results/Task3/Tsch20_26/link5-20.txt
+2011/10/11 02:03:05 save data to file ./results/Task3/Tsch20_26/link5-6.txt
+2011/10/11 02:03:06 save data to file ./results/Task3/Tsch20_26/link5-31.txt
+2011/10/11 02:03:07 save data to file ./results/Task3/Tsch20_26/link5-13.txt
+2011/10/11 02:03:08 save data to file ./results/Task3/Tsch20_26/link5-21.txt
+2011/10/11 02:03:09 save data to file ./results/Task3/Tsch20_26/link5-7.txt
+2011/10/11 02:03:09 ===>Node: 192.168.200.10  download done! in  26.8096029758
+2011/10/11 02:03:10 save data to file ./results/Task3/Tsch20_26/link5-26.txt
+2011/10/11 02:03:11 save data to file ./results/Task3/Tsch20_26/link5-14.txt
+2011/10/11 02:03:13 save data to file ./results/Task3/Tsch20_26/link5-22.txt
+2011/10/11 02:03:13 ===>Node: 192.168.200.12  download done! in  30.2286100388
+2011/10/11 02:03:14 save data to file ./results/Task3/Tsch20_26/link5-27.txt
+2011/10/11 02:03:15 save data to file ./results/Task3/Tsch20_26/link5-15.txt
+2011/10/11 02:03:15 ===>Node: 192.168.200.11  download done! in  32.5011668205
+2011/10/11 02:03:18 save data to file ./results/Task3/Tsch20_26/link5-24.txt
+2011/10/11 02:03:22 save data to file ./results/Task3/Tsch20_26/link5-25.txt
+2011/10/11 02:03:26 save data to file ./results/Task3/Tsch20_26/link5-23.txt
+2011/10/11 02:03:26 ===>Node: 192.168.200.13  download done! in  43.59384799
+2011/10/11 02:03:26 ===>Downloading data Files on Gateways lasted for:  43.5953819752
+2011/10/11 02:03:26 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:03:26 ===>Programming GWs
+2011/10/11 02:04:00 ===>Done programming Rxs on  192.168.200.12  in  33.8131411076 2011/10/11 02:04:00 seconds===>Done programming Rxs on 
+ 192.168.200.11  in  33.8136029243 seconds
+2011/10/11 02:04:00 ===>Done programming Rxs on  192.168.200.10  in  33.8136119843 seconds
+2011/10/11 02:04:06 ===>Done programming Rxs on  192.168.200.13  in  39.7254948616 seconds
+2011/10/11 02:04:06 ===>Programming all nodes lasted for:  39.7260839939
+2011/10/11 02:04:09 ===>Programming SenderNode: 6
+2011/10/11 02:04:37 ===>Starting Transmission on:  6
+2011/10/11 02:04:40 ==>waiting for node  6  to finish TX in  108  seconds
+2011/10/11 02:04:50 ==>waiting for node  6  to finish TX in  98  seconds
+2011/10/11 02:05:00 ==>waiting for node  6  to finish TX in  88  seconds
+2011/10/11 02:05:10 ==>waiting for node  6  to finish TX in  78  seconds
+2011/10/11 02:05:20 ==>waiting for node  6  to finish TX in  68  seconds
+2011/10/11 02:05:30 ==>waiting for node  6  to finish TX in  58  seconds
+2011/10/11 02:05:40 ==>waiting for node  6  to finish TX in  48  seconds
+2011/10/11 02:05:50 ==>waiting for node  6  to finish TX in  38  seconds
+2011/10/11 02:06:00 ==>waiting for node  6  to finish TX in  28  seconds
+2011/10/11 02:06:10 ==>waiting for node  6  to finish TX in  18  seconds
+2011/10/11 02:06:20 ==>waiting for node  6  to finish TX in  8  seconds
+2011/10/11 02:06:28 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:06:33 save data to file ./results/Task3/Tsch20_26/link6-1.txt
+2011/10/11 02:06:33 save data to file ./results/Task3/Tsch20_26/link6-8.txt
+2011/10/11 02:06:33 save data to file ./results/Task3/Tsch20_26/link6-32.txt
+2011/10/11 02:06:33 save data to file ./results/Task3/Tsch20_26/link6-16.txt
+2011/10/11 02:06:37 save data to file ./results/Task3/Tsch20_26/link6-2.txt
+2011/10/11 02:06:37 save data to file ./results/Task3/Tsch20_26/link6-29.txt
+2011/10/11 02:06:38 save data to file ./results/Task3/Tsch20_26/link6-17.txt
+2011/10/11 02:06:38 save data to file ./results/Task3/Tsch20_26/link6-9.txt
+2011/10/11 02:06:42 save data to file ./results/Task3/Tsch20_26/link6-10.txt
+2011/10/11 02:06:42 save data to file ./results/Task3/Tsch20_26/link6-3.txt
+2011/10/11 02:06:42 save data to file ./results/Task3/Tsch20_26/link6-28.txt
+2011/10/11 02:06:42 save data to file ./results/Task3/Tsch20_26/link6-18.txt
+2011/10/11 02:06:46 save data to file ./results/Task3/Tsch20_26/link6-11.txt
+2011/10/11 02:06:46 save data to file ./results/Task3/Tsch20_26/link6-4.txt
+2011/10/11 02:06:46 save data to file ./results/Task3/Tsch20_26/link6-30.txt
+2011/10/11 02:06:47 save data to file ./results/Task3/Tsch20_26/link6-19.txt
+2011/10/11 02:06:50 save data to file ./results/Task3/Tsch20_26/link6-12.txt
+2011/10/11 02:06:51 save data to file ./results/Task3/Tsch20_26/link6-20.txt
+2011/10/11 02:06:51 save data to file ./results/Task3/Tsch20_26/link6-5.txt
+2011/10/11 02:06:51 save data to file ./results/Task3/Tsch20_26/link6-31.txt
+2011/10/11 02:06:54 save data to file ./results/Task3/Tsch20_26/link6-13.txt
+2011/10/11 02:06:55 save data to file ./results/Task3/Tsch20_26/link6-21.txt
+2011/10/11 02:06:55 save data to file ./results/Task3/Tsch20_26/link6-26.txt
+2011/10/11 02:06:56 save data to file ./results/Task3/Tsch20_26/link6-7.txt
+2011/10/11 02:06:56 ===>Node: 192.168.200.10  download done! in  27.8550839424
+2011/10/11 02:06:59 save data to file ./results/Task3/Tsch20_26/link6-14.txt
+2011/10/11 02:06:59 save data to file ./results/Task3/Tsch20_26/link6-22.txt
+2011/10/11 02:06:59 ===>Node: 192.168.200.12  download done! in  31.3517458439
+2011/10/11 02:07:00 save data to file ./results/Task3/Tsch20_26/link6-27.txt
+2011/10/11 02:07:03 save data to file ./results/Task3/Tsch20_26/link6-15.txt
+2011/10/11 02:07:03 ===>Node: 192.168.200.11  download done! in  34.8255620003
+2011/10/11 02:07:04 save data to file ./results/Task3/Tsch20_26/link6-24.txt
+2011/10/11 02:07:07 save data to file ./results/Task3/Tsch20_26/link6-25.txt
+2011/10/11 02:07:11 save data to file ./results/Task3/Tsch20_26/link6-23.txt
+2011/10/11 02:07:11 ===>Node: 192.168.200.13  download done! in  43.3389289379
+2011/10/11 02:07:11 ===>Downloading data Files on Gateways lasted for:  43.3404929638
+2011/10/11 02:07:11 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:07:11 ===>Programming GWs
+2011/10/11 02:07:40 ===>Done programming Rxs on  192.168.200.10  in  28.4460191727 seconds
+2011/10/11 02:07:42 ===>Done programming Rxs on  192.168.200.12  in  31.0315349102 seconds
+2011/10/11 02:07:45 ===>Done programming Rxs on  192.168.200.11  in  33.5060858727 seconds
+2011/10/11 02:07:51 ===>Done programming Rxs on  192.168.200.13  in  39.9960050583 seconds
+2011/10/11 02:07:51 ===>Programming all nodes lasted for:  39.9973590374
+2011/10/11 02:07:54 ===>Programming SenderNode: 7
+2011/10/11 02:08:22 ===>Starting Transmission on:  7
+2011/10/11 02:08:25 ==>waiting for node  7  to finish TX in  108  seconds
+2011/10/11 02:08:35 ==>waiting for node  7  to finish TX in  98  seconds
+2011/10/11 02:08:45 ==>waiting for node  7  to finish TX in  88  seconds
+2011/10/11 02:08:55 ==>waiting for node  7  to finish TX in  78  seconds
+2011/10/11 02:09:05 ==>waiting for node  7  to finish TX in  68  seconds
+2011/10/11 02:09:15 ==>waiting for node  7  to finish TX in  58  seconds
+2011/10/11 02:09:25 ==>waiting for node  7  to finish TX in  48  seconds
+2011/10/11 02:09:35 ==>waiting for node  7  to finish TX in  38  seconds
+2011/10/11 02:09:45 ==>waiting for node  7  to finish TX in  28  seconds
+2011/10/11 02:09:55 ==>waiting for node  7  to finish TX in  18  seconds
+2011/10/11 02:10:05 ==>waiting for node  7  to finish TX in  8  seconds
+2011/10/11 02:10:13 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:10:17 save data to file ./results/Task3/Tsch20_26/link7-1.txt
+2011/10/11 02:10:18 save data to file ./results/Task3/Tsch20_26/link7-8.txt
+2011/10/11 02:10:18 save data to file ./results/Task3/Tsch20_26/link7-32.txt
+ 2011/10/11 02:10:18 save data to file ./results/Task3/Tsch20_26/link7-16.txt
+2011/10/11 02:10:22 save data to file ./results/Task3/Tsch20_26/link7-2.txt
+2011/10/11 02:10:22 save data to file ./results/Task3/Tsch20_26/link7-9.txt
+2011/10/11 02:10:23 save data to file ./results/Task3/Tsch20_26/link7-17.txt
+2011/10/11 02:10:23 save data to file ./results/Task3/Tsch20_26/link7-29.txt
+2011/10/11 02:10:25 save data to file ./results/Task3/Tsch20_26/link7-3.txt
+2011/10/11 02:10:26 save data to file ./results/Task3/Tsch20_26/link7-10.txt
+2011/10/11 02:10:27 save data to file ./results/Task3/Tsch20_26/link7-28.txt
+2011/10/11 02:10:27 save data to file ./results/Task3/Tsch20_26/link7-18.txt
+2011/10/11 02:10:30 save data to file ./results/Task3/Tsch20_26/link7-4.txt
+2011/10/11 02:10:30 save data to file ./results/Task3/Tsch20_26/link7-11.txt
+2011/10/11 02:10:32 save data to file ./results/Task3/Tsch20_26/link7-30.txt
+2011/10/11 02:10:32 save data to file ./results/Task3/Tsch20_26/link7-19.txt
+2011/10/11 02:10:34 save data to file ./results/Task3/Tsch20_26/link7-5.txt
+2011/10/11 02:10:34 save data to file ./results/Task3/Tsch20_26/link7-12.txt
+2011/10/11 02:10:36 save data to file ./results/Task3/Tsch20_26/link7-20.txt
+2011/10/11 02:10:36 save data to file ./results/Task3/Tsch20_26/link7-31.txt
+2011/10/11 02:10:39 save data to file ./results/Task3/Tsch20_26/link7-6.txt
+2011/10/11 02:10:39 ===>Node: 192.168.200.10  download done! in  25.5762121677
+2011/10/11 02:10:39 save data to file ./results/Task3/Tsch20_26/link7-13.txt
+2011/10/11 02:10:40 save data to file ./results/Task3/Tsch20_26/link7-21.txt
+2011/10/11 02:10:41 save data to file ./results/Task3/Tsch20_26/link7-26.txt
+2011/10/11 02:10:43 save data to file ./results/Task3/Tsch20_26/link7-14.txt
+2011/10/11 02:10:43 save data to file ./results/Task3/Tsch20_26/link7-22.txt
+2011/10/11 02:10:43 ===>Node: 192.168.200.12  download done! in  30.4711301327
+2011/10/11 02:10:45 save data to file ./results/Task3/Tsch20_26/link7-27.txt
+2011/10/11 02:10:47 save data to file ./results/Task3/Tsch20_26/link7-15.txt
+2011/10/11 02:10:47 ===>Node: 192.168.200.11  download done! in  34.1381018162
+2011/10/11 02:10:50 save data to file ./results/Task3/Tsch20_26/link7-24.txt
+2011/10/11 02:10:53 save data to file ./results/Task3/Tsch20_26/link7-25.txt
+2011/10/11 02:10:57 save data to file ./results/Task3/Tsch20_26/link7-23.txt
+2011/10/11 02:10:57 ===>Node: 192.168.200.13  download done! in  44.2618079185
+2011/10/11 02:10:57 ===>Downloading data Files on Gateways lasted for:  44.2633318901
+2011/10/11 02:10:57 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:10:57 ===>Programming GWs
+2011/10/11 02:11:31 ===>Done programming Rxs on  192.168.200.11  in  33.4694809914 seconds
+2011/10/11 02:11:31 ===>Done programming Rxs on  192.168.200.10  in  33.4697008133 seconds
+2011/10/11 02:11:37 ===>Done programming Rxs on 2011/10/11 02:11:37  192.168.200.12  in ===>Done programming Rxs on  39.2441358566 seconds
+ 192.168.200.13  in  39.2440841198 seconds
+2011/10/11 02:11:37 ===>Programming all nodes lasted for:  39.2456049919
+2011/10/11 02:11:40 ===>Programming SenderNode: 8
+2011/10/11 02:12:09 ===>Starting Transmission on:  8
+2011/10/11 02:12:13 ==>waiting for node  8  to finish TX in  108  seconds
+2011/10/11 02:12:23 ==>waiting for node  8  to finish TX in  98  seconds
+2011/10/11 02:12:33 ==>waiting for node  8  to finish TX in  88  seconds
+2011/10/11 02:12:43 ==>waiting for node  8  to finish TX in  78  seconds
+2011/10/11 02:12:53 ==>waiting for node  8  to finish TX in  68  seconds
+2011/10/11 02:13:03 ==>waiting for node  8  to finish TX in  58  seconds
+2011/10/11 02:13:13 ==>waiting for node  8  to finish TX in  48  seconds
+2011/10/11 02:13:23 ==>waiting for node  8  to finish TX in  38  seconds
+2011/10/11 02:13:33 ==>waiting for node  8  to finish TX in  28  seconds
+2011/10/11 02:13:43 ==>waiting for node  8  to finish TX in  18  seconds
+2011/10/11 02:13:53 ==>waiting for node  8  to finish TX in  8  seconds
+2011/10/11 02:14:01 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:14:06 save data to file2011/10/11 02:14:06  ./results/Task3/Tsch20_26/link8-9.txt
+save data to file ./results/Task3/Tsch20_26/link8-32.txt
+2011/10/11 02:14:06 save data to file ./results/Task3/Tsch20_26/link8-1.txt
+2011/10/11 02:14:06 save data to file ./results/Task3/Tsch20_26/link8-16.txt
+2011/10/11 02:14:10 save data to file ./results/Task3/Tsch20_26/link8-29.txt
+2011/10/11 02:14:10 save data to file ./results/Task3/Tsch20_26/link8-10.txt
+2011/10/11 02:14:11 save data to file ./results/Task3/Tsch20_26/link8-2.txt
+2011/10/11 02:14:11 save data to file ./results/Task3/Tsch20_26/link8-17.txt
+2011/10/11 02:14:14 save data to file ./results/Task3/Tsch20_26/link8-28.txt
+2011/10/11 02:14:15 save data to file ./results/Task3/Tsch20_26/link8-18.txt
+2011/10/11 02:14:15 save data to file ./results/Task3/Tsch20_26/link8-11.txt
+2011/10/11 02:14:15 save data to file ./results/Task3/Tsch20_26/link8-3.txt
+2011/10/11 02:14:17 save data to file ./results/Task3/Tsch20_26/link8-30.txt
+2011/10/11 02:14:19 save data to file ./results/Task3/Tsch20_26/link8-19.txt
+2011/10/11 02:14:19 save data to file ./results/Task3/Tsch20_26/link8-12.txt
+2011/10/11 02:14:20 save data to file ./results/Task3/Tsch20_26/link8-4.txt
+2011/10/11 02:14:22 save data to file ./results/Task3/Tsch20_26/link8-31.txt
+2011/10/11 02:14:24 save data to file ./results/Task3/Tsch20_26/link8-5.txt
+2011/10/11 02:14:24 save data to file ./results/Task3/Tsch20_26/link8-20.txt
+2011/10/11 02:14:24 save data to file ./results/Task3/Tsch20_26/link8-13.txt
+2011/10/11 02:14:26 save data to file ./results/Task3/Tsch20_26/link8-26.txt
+2011/10/11 02:14:28 save data to file ./results/Task3/Tsch20_26/link8-21.txt
+2011/10/11 02:14:28 save data to file ./results/Task3/Tsch20_26/link8-6.txt
+2011/10/11 02:14:28 save data to file ./results/Task3/Tsch20_26/link8-14.txt
+2011/10/11 02:14:29 save data to file ./results/Task3/Tsch20_26/link8-27.txt
+2011/10/11 02:14:32 save data to file ./results/Task3/Tsch20_26/link8-22.txt
+2011/10/11 02:14:32 ===>Node: 192.168.200.12  download done! in  31.3341929913
+2011/10/11 02:14:32 save data to file ./results/Task3/Tsch20_26/link8-7.txt
+2011/10/11 02:14:32 ===>Node: 192.168.200.10  download done! in  31.7289729118
+2011/10/11 02:14:33 save data to file ./results/Task3/Tsch20_26/link8-15.txt
+2011/10/11 02:14:33 ===>Node: 192.168.200.11  download done! in  32.031006813
+2011/10/11 02:14:33 save data to file ./results/Task3/Tsch20_26/link8-24.txt
+2011/10/11 02:14:37 save data to file ./results/Task3/Tsch20_26/link8-25.txt
+2011/10/11 02:14:41 save data to file ./results/Task3/Tsch20_26/link8-23.txt
+2011/10/11 02:14:41 ===>Node: 192.168.200.13  download done! in  40.2918970585
+2011/10/11 02:14:41 ===>Downloading data Files on Gateways lasted for:  40.293448925
+2011/10/11 02:14:41 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:14:41 ===>Programming GWs
+2011/10/11 02:15:15 ===>Done programming Rxs on  2011/10/11 02:15:15 ===>Done programming Rxs on 192.168.200.12 192.168.200.11  in  33.701061964   in  seconds33.7004351616 
+seconds
+2011/10/11 02:15:15 ===>Done programming Rxs on  192.168.200.10  in  33.7012929916 seconds
+2011/10/11 02:15:20 ===>Done programming Rxs on  192.168.200.13  in  39.4012870789 seconds
+2011/10/11 02:15:20 ===>Programming all nodes lasted for:  39.402613163
+2011/10/11 02:15:23 ===>Programming SenderNode: 9
+2011/10/11 02:15:53 ===>Starting Transmission on:  9
+2011/10/11 02:15:56 ==>waiting for node  9  to finish TX in  108  seconds
+2011/10/11 02:16:06 ==>waiting for node  9  to finish TX in  98  seconds
+2011/10/11 02:16:16 ==>waiting for node  9  to finish TX in  88  seconds
+2011/10/11 02:16:27 ==>waiting for node  9  to finish TX in  78  seconds
+2011/10/11 02:16:37 ==>waiting for node  9  to finish TX in  68  seconds
+2011/10/11 02:16:47 ==>waiting for node  9  to finish TX in  58  seconds
+2011/10/11 02:16:57 ==>waiting for node  9  to finish TX in  48  seconds
+2011/10/11 02:17:07 ==>waiting for node  9  to finish TX in  38  seconds
+2011/10/11 02:17:17 ==>waiting for node  9  to finish TX in  28  seconds
+2011/10/11 02:17:27 ==>waiting for node  9  to finish TX in  18  seconds
+2011/10/11 02:17:37 ==>waiting for node  9  to finish TX in  8  seconds
+2011/10/11 02:17:45 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:17:49 save data to file ./results/Task3/Tsch20_26/link9-32.txt
+2011/10/11 02:17:49 save data to file ./results/Task3/Tsch20_26/link9-8.txt
+2011/10/11 02:17:50 save data to file ./results/Task3/Tsch20_26/link9-1.txt
+2011/10/11 02:17:50 save data to file ./results/Task3/Tsch20_26/link9-16.txt
+2011/10/11 02:17:53 save data to file ./results/Task3/Tsch20_26/link9-29.txt
+2011/10/11 02:17:54 save data to file ./results/Task3/Tsch20_26/link9-10.txt
+2011/10/11 02:17:54 save data to file ./results/Task3/Tsch20_26/link9-2.txt
+2011/10/11 02:17:54 save data to file ./results/Task3/Tsch20_26/link9-17.txt
+2011/10/11 02:17:57 save data to file ./results/Task3/Tsch20_26/link9-28.txt
+2011/10/11 02:17:58 save data to file ./results/Task3/Tsch20_26/link9-18.txt
+2011/10/11 02:17:59 save data to file ./results/Task3/Tsch20_26/link9-11.txt
+2011/10/11 02:17:59 save data to file ./results/Task3/Tsch20_26/link9-3.txt
+2011/10/11 02:18:01 save data to file ./results/Task3/Tsch20_26/link9-30.txt
+2011/10/11 02:18:02 save data to file ./results/Task3/Tsch20_26/link9-19.txt
+2011/10/11 02:18:03 save data to file ./results/Task3/Tsch20_26/link9-12.txt
+2011/10/11 02:18:03 save data to file ./results/Task3/Tsch20_26/link9-4.txt
+2011/10/11 02:18:05 save data to file ./results/Task3/Tsch20_26/link9-31.txt
+2011/10/11 02:18:06 save data to file ./results/Task3/Tsch20_26/link9-20.txt
+2011/10/11 02:18:07 save data to file ./results/Task3/Tsch20_26/link9-5.txt
+2011/10/11 02:18:07 save data to file ./results/Task3/Tsch20_26/link9-13.txt
+2011/10/11 02:18:09 save data to file ./results/Task3/Tsch20_26/link9-26.txt
+2011/10/11 02:18:10 save data to file ./results/Task3/Tsch20_26/link9-21.txt
+2011/10/11 02:18:12 save data to file ./results/Task3/Tsch20_26/link9-6.txt
+2011/10/11 02:18:12 save data to file ./results/Task3/Tsch20_26/link9-14.txt
+2011/10/11 02:18:12 save data to file ./results/Task3/Tsch20_26/link9-27.txt
+2011/10/11 02:18:14 save data to file ./results/Task3/Tsch20_26/link9-22.txt
+2011/10/11 02:18:14 ===>Node: 192.168.200.12  download done! in  29.0930278301
+2011/10/11 02:18:16 save data to file ./results/Task3/Tsch20_26/link9-7.txt
+2011/10/11 02:18:16 ===>Node: 192.168.200.10  download done! in  31.6292030811
+2011/10/11 02:18:16 save data to file ./results/Task3/Tsch20_26/link9-24.txt
+2011/10/11 02:18:16 save data to file ./results/Task3/Tsch20_26/link9-15.txt
+2011/10/11 02:18:16 ===>Node: 192.168.200.11  download done! in  31.8577170372
+2011/10/11 02:18:20 save data to file ./results/Task3/Tsch20_26/link9-25.txt
+2011/10/11 02:18:24 save data to file ./results/Task3/Tsch20_26/link9-23.txt
+2011/10/11 02:18:24 ===>Node: 192.168.200.13  download done! in  39.3071470261
+2011/10/11 02:18:24 ===>Downloading data Files on Gateways lasted for:  39.3088150024
+2011/10/11 02:18:24 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:18:24 ===>Programming GWs
+2011/10/11 02:18:52 ===>Done programming Rxs on  192.168.200.10  in  28.5738010406 seconds
+2011/10/11 02:18:55 ===>Done programming Rxs on  192.168.200.12  in  31.0170450211 seconds
+2011/10/11 02:18:58 ===>Done programming Rxs on  192.168.200.11  in  33.7737929821 seconds
+2011/10/11 02:19:03 ===>Done programming Rxs on  192.168.200.13  in  39.121614933 seconds
+2011/10/11 02:19:03 ===>Programming all nodes lasted for:  39.1336150169
+2011/10/11 02:19:06 ===>Programming SenderNode: 10
+2011/10/11 02:19:36 ===>Starting Transmission on:  10
+2011/10/11 02:19:39 ==>waiting for node  10  to finish TX in  108  seconds
+2011/10/11 02:19:49 ==>waiting for node  10  to finish TX in  98  seconds
+2011/10/11 02:19:59 ==>waiting for node  10  to finish TX in  88  seconds
+2011/10/11 02:20:09 ==>waiting for node  10  to finish TX in  78  seconds
+2011/10/11 02:20:19 ==>waiting for node  10  to finish TX in  68  seconds
+2011/10/11 02:20:29 ==>waiting for node  10  to finish TX in  58  seconds
+2011/10/11 02:20:39 ==>waiting for node  10  to finish TX in  48  seconds
+2011/10/11 02:20:49 ==>waiting for node  10  to finish TX in  38  seconds
+2011/10/11 02:20:59 ==>waiting for node  10  to finish TX in  28  seconds
+2011/10/11 02:21:09 ==>waiting for node  10  to finish TX in  18  seconds
+2011/10/11 02:21:19 ==>waiting for node  10  to finish TX in  8  seconds
+2011/10/11 02:21:27 ==>Retrieving Data from GATEWAYS......
+2011/10/11 02:21:31 save data to file ./results/Task3/Tsch20_26/link10-16.txt
+2011/10/11 02:21:32 save data to file ./results/Task3/Tsch20_26/link10-32.txt
+2011/10/11 02:21:32 save data to file ./results/Task3/Tsch20_26/link10-8.txt
+2011/10/11 02:21:32 save data to file ./results/Task3/Tsch20_26/link10-1.txt
+2011/10/11 02:21:35 save data to file ./results/Task3/Tsch20_26/link10-17.txt
+2011/10/11 02:21:36 save data to file ./results/Task3/Tsch20_26/link10-29.txt
+2011/10/11 02:21:37 save data to file ./results/Task3/Tsch20_26/link10-9.txt
+2011/10/11 02:21:37 save data to file ./results/Task3/Tsch20_26/link10-2.txt
+2011/10/11 02:21:39 save data to file ./results/Task3/Tsch20_26/link10-28.txt
+2011/10/11 02:21:40 save data to file ./results/Task3/Tsch20_26/link10-18.txt
+2011/10/11 02:21:40 save data to file ./results/Task3/Tsch20_26/link10-3.txt
+2011/10/11 02:21:41 save data to file ./results/Task3/Tsch20_26/link10-11.txt
+2011/10/11 02:21:43 save data to file ./results/Task3/Tsch20_26/link10-30.txt
+2011/10/11 02:21:44 save data to file ./results/Task3/Tsch20_26/link10-19.txt
+2011/10/11 02:21:44 save data to file ./results/Task3/Tsch20_26/link10-4.txt
+2011/10/11 02:21:46 save data to file ./results/Task3/Tsch20_26/link10-12.txt
+2011/10/11 02:21:47 save data to file ./results/Task3/Tsch20_26/link10-31.txt
+2011/10/11 02:21:47 save data to file ./results/Task3/Tsch20_26/link10-20.txt
+2011/10/11 02:21:48 save data to file ./results/Task3/Tsch20_26/link10-5.txt
+2011/10/11 02:21:50 save data to file ./results/Task3/Tsch20_26/link10-13.txt
+2011/10/11 02:21:51 save data to file ./results/Task3/Tsch20_26/link10-26.txt
+2011/10/11 02:21:51 save data to file ./results/Task3/Tsch20_26/link10-21.txt
+2011/10/11 02:21:52 save data to file ./results/Task3/Tsch20_26/link10-6.txt
+2011/10/11 02:21:54 save data to file ./results/Task3/Tsch20_26/link10-14.txt
+2011/10/11 02:21:55 save data to file ./results/Task3/Tsch20_26/link10-27.txt
+2011/10/11 02:21:55 save data to file ./results/Task3/Tsch20_26/link10-22.txt
+2011/10/11 02:21:55 ===>Node: 192.168.200.12  download done! in  27.8342871666
+2011/10/11 02:21:56 save data to file ./results/Task3/Tsch20_26/link10-7.txt
+2011/10/11 02:21:56 ===>Node: 192.168.200.10  download done! in  28.625677824
+2011/10/11 02:21:58 save data to file ./results/Task3/Tsch20_26/link10-24.txt
+2011/10/11 02:21:59 save data to file ./results/Task3/Tsch20_26/link10-15.txt
+2011/10/11 02:21:59 ===>Node: 192.168.200.11  download done! in  31.5839421749
+2011/10/11 02:22:02 save data to file ./results/Task3/Tsch20_26/link10-25.txt
+2011/10/11 02:22:06 save data to file ./results/Task3/Tsch20_26/link10-23.txt
+2011/10/11 02:22:06 ===>Node: 192.168.200.13  download done! in  38.9120390415
+2011/10/11 02:22:06 ===>Downloading data Files on Gateways lasted for:  38.9136710167
+2011/10/11 02:22:06 ==>case: CH_POOL_SIZE= 3999
+2011/10/11 02:22:06 ===>Programming GWs
+2011/10/11 02:22:38 ===>Done programming Rxs on  192.168.200.12  in  31.4013960361 seconds
+2011/10/11 02:22:40 ===>Done programming Rxs on 2011/10/11 02:22:40  192.168.200.10 ===>Done programming Rxs on  in  192.168.200.11  34.0826690197  in seconds
+ 34.083509922 seconds
+2011/10/11 02:22:46 ===>Done programming Rxs on  192.168.200.13  in  39.8039519787 seconds
+2011/10/11 02:22:46 ===>Programming all nodes lasted for:  39.8048169613
+2011/10/11 02:22:49 ===>Programming SenderNode: 11

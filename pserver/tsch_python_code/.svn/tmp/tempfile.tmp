@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os,sys,  getopt, getpass
+import os.path, time
+import subprocess
+#KTH - The Royal Institute of Technology
+# Automatic Control Lab
+#  Prof. Mikael Johansson's Group
+#    Author: Antonio Gonga (El-Guapo Angoleno): gonga@kth.se, PhD Student
+
+#Parser file: This file is used to parse data files into a readable format to MATLAB...it
+#             also creats XML files.
+
+import stats_generator
+import Node
+import Link
+import Burst
+import burst_finder
+import beta_factor
+import empiricalCDF as cdf
+
+from stats_generator import *
+from empiricalCDF import *
+
+from plot_cdfs import *
+
+def reverse_numeric(x, y):
+    return int(y - x)
+
+if __name__ == '__main__':
+    #print 'Graph Generator'
+
+    '''Generate Stats Objects '''
+    ListOfStatistics = stats_generator.load_files_task1()
+    
+    AllPrrs = []
+
+    for idx, stat in enumerate(ListOfStatistics):
+        print 'Stats for: ', stat.StatsId
+        #stat.createNodes()
+        ListOfStatistics[idx].addLinkFiles()
+        for idx2, node in enumerate(ListOfStatistics[idx].ListOfNodes):
+            #print 'NodeID:', node.NodeId
+            ListOfStatistics[idx].ListOfNodes[idx2].createLinks()
+            #print ListOfStatistics[idx].ListOfNodes[idx2].linksPrr()
+            for prr in ListOfStatistics[idx].ListOfNodes[idx2].linksPrr():
+                AllPrrs.append(prr)
+
+    print 'Link CDFS'    
+    #cdf, ccdf = cdf.empirical_cdf_ccdf(AllPrrs, [0,1], len(AllPrrs))
+
+    
+    #AllPrrs.sort()
+    #plot_cdf_ccdf(AllPrrs, ccdf,['CDF', 'CCDF'], 'LinkCDF')
+    show_cdf(AllPrrs)

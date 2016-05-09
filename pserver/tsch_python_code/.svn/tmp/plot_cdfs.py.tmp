@@ -1,0 +1,127 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os,sys,  getopt, getpass
+import os.path, time
+
+import pylab as P
+
+
+import csv
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.font_manager
+#prop = matplotlib.font_manager.FontProperties(size=7)
+from matplotlib import rc
+
+plt.rcParams['ps.useafm'] = True
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+plt.rcParams['pdf.fonttype'] = 3 #[42 or 3]
+prop = matplotlib.font_manager.FontProperties(size=3)
+
+difg = ['-', '-', '-d', 'd-', 'k-', 's-' ,'v-','o-']
+
+def plot_cdf_ccdf(cdf_vec, ccdf_vec, axnames, figName):
+
+    counter = 0
+    axplts  = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_xlabel('LinkIDs', size=5)
+    ax.set_ylabel('CDF and CCDF ', size=5)
+    #ax.set_xlim(0, len(cdf_vec), size=5)
+    #ax.set_xticklabels(np.arange(0,1.1,0.1), size=5)
+    #ax.set_yticklabels(np.arange(0,len(cdf_vec)), size=5)
+
+    mygraph = ax.plot(cdf_vec, difg[counter])    
+    axplts.append(mygraph)
+    counter = counter + 1
+
+    mygraph = ax.plot(ccdf_vec, difg[counter])
+    axplts.append(mygraph)
+
+    ax.grid(True)
+#    plt.legend( [axplts[0], axplts[1]],
+#            [axnames[0], axnames[1]], loc='best', prop=prop)
+    plt.legend( axplts,
+            axnames[:len(axplts)], loc='best', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)    
+    plt.savefig(figName+".eps", dpi=120)
+
+
+<<<<<<< .mine
+def show_cdf(Prrs):
+    P.figure()
+   
+    n, bins, patches = P.hist(Prrs, 100, normed=1, histtype='step', cumulative=True)
+=======
+def show_cdf_Prr(Prrs):
+    P.figure()
+
+    patchesList=[]
+
+    n, bins, patches = P.hist(Prrs, 100, normed=1, histtype='step', cumulative=True, linewidth = 1.25)
+    patchesList.append(patches)
+>>>>>>> .r65
+    #print n
+    #print bins, n
+
+<<<<<<< .mine
+    ## add a line showing the expected distribution
+    #y = P.normpdf( bins, mu, sigma).cumsum()
+    #y /= y[-1]
+    #l = P.plot(bins, y, 'k--', linewidth=1.5)
+    #
+    ## create a second data-set with a smaller standard deviation
+    #sigma2 = 15.
+    #x = mu + sigma2*P.randn(10000)
+    #
+    #n, bins, patches = P.hist(x, bins=bins, normed=1, histtype='step', cumulative=True)
+    #
+    ## add a line showing the expected distribution
+    #y = P.normpdf( bins, mu, sigma2).cumsum()
+    #y /= y[-1]
+    #l = P.plot(bins, y, 'r--', linewidth=1.5)
+    #
+    ## finally overplot a reverted cumulative histogram
+    n, bins, patches = P.hist(Prrs, bins=bins, normed=1, histtype='step', cumulative=-1)
+
+=======
+    n, bins, patches = P.hist(Prrs, bins=bins, normed=1, histtype='step', cumulative=-1, linewidth = 1.25)
+    patchesList.append(patches)
+    
+>>>>>>> .r65
+    print patches
+    #print n, bins
+<<<<<<< .mine
+    P.xlabel('AvgPrSucc')
+    P.ylabel('CDF and CCDF')
+    P.legend(['CDF', 'CCDF'])
+=======
+    P.title('CDF and CCDF')
+    P.xlabel('AvgPrSucc')
+    P.ylabel('CDF and CCDF')
+    
+    P.legend([r'Ch26', r'Ch26'], shadow = True) #, loc = (0.01, 0.55)
+>>>>>>> .r65
+
+<<<<<<< .mine
+    P.grid(True)
+    P.ylim(0, 1.05)
+    P.show()
+=======
+    #ltext = P.gca().get_legend().get_texts()
+    #P.setp(ltext[0], fontsize = 20, color = 'b')
+    #P.setp(ltext[1], fontsize = 20, color = 'r')
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    P.savefig('Ch26cdf.eps', dpi=120)
+    #P.show()
+>>>>>>> .r65

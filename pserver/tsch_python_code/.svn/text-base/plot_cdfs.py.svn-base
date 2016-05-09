@@ -1,0 +1,417 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os,sys,  getopt, getpass
+import os.path, time
+
+import matplotlib
+matplotlib.use('Agg')
+
+import pylab as P
+
+
+import csv
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.font_manager
+#prop = matplotlib.font_manager.FontProperties(size=7)
+from matplotlib import rc
+
+import NetworkStatistics
+from NetworkStatistics import *
+
+plt.rcParams['ps.useafm'] = True
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+plt.rcParams['pdf.fonttype'] = 3 #[42 or 3]
+prop = matplotlib.font_manager.FontProperties(size=3)
+
+difg = ['-', '-', '-', '-', '-', '-' ,'-','-','-', '-', '-', '-', '-', '-' ,'-','-']
+
+class DPlot:
+    def __init__(self, pid, data):
+        self.plotId     = pid
+        self.data       = data
+        self.NoChannels = 0
+
+def conv2str(labelsList):
+    retList = []
+    for label in labelsList:
+        retList.append(str(label))
+    return retList
+
+def conv2int(labelsList):
+    retList = []
+    for label in labelsList:
+        retList.append(str(int(label)))
+    return retList
+
+def plot_sorted_data(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    counter    = 0
+    axplts     = []
+    legendList = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_title(figTitle)
+    ax.set_xlabel(xLabel, size=5)
+    ax.set_ylabel(yLabel, size=5)
+
+    for dataPlot in dataPlotList:        
+        mygraph = ax.plot(dataPlot.data, difg[counter])
+        axplts.append(mygraph)
+        legendList.append(dataPlot.plotId)
+        counter = counter + 1
+
+
+    labelsX= ax.get_xticklabels
+    labelsY= ax.get_yticklabels
+
+    ax.set_xticklabels(labelsX, size=3)
+    ax.set_yticklabels(labelsY, size=3)
+    
+    ax.grid(True)
+
+    plt.legend(axplts, legendList, loc='upper-left', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)
+    plt.savefig(figName+".eps", dpi=120)
+
+def plot_sorted_prr(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    counter    = 0
+    axplts     = []
+    legendList = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_title(figTitle)
+    ax.set_xlabel(xLabel, size=5)
+    ax.set_ylabel(yLabel, size=5)
+
+    xLen = 0
+    for dataPlot in dataPlotList:
+        mygraph = ax.plot(dataPlot.AllNodesPrr, difg[counter])
+        axplts.append(mygraph)
+        legendList.append(dataPlot.StatsId)
+        counter = counter + 1
+        xLen = len(dataPlot.AllNodesPrr)
+
+    ax.set_xlim((1, xLen+1), size=5)
+    ax.set_ylim((0, 1), size=5)
+    
+    ax.set_xticklabels(conv2int(ax.get_xticks()), size=4)
+    ax.set_yticklabels(conv2str(ax.get_yticks()), size=4)
+    
+    ax.grid(True)
+
+    plt.legend(axplts, legendList, loc='upper left', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)
+    plt.savefig(figName+".eps", dpi=120)
+
+def plot_sorted_beta(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    counter    = 0
+    axplts     = []
+    legendList = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_title(figTitle)
+    ax.set_xlabel(xLabel, size=5)
+    ax.set_ylabel(yLabel, size=5)
+
+    xLen = 0
+    for dataPlot in dataPlotList:
+        mygraph = ax.plot(dataPlot.AllNodesBeta, difg[counter])
+        axplts.append(mygraph)
+        legendList.append(dataPlot.StatsId)
+        counter = counter + 1
+        xLen = len(dataPlot.AllNodesBeta)
+#
+#    labelsX= ax.get_xticklabels()
+#    labelsY= ax.get_yticklabels()
+#
+#    ax.set_xticklabels(labelsX, size=3)
+#    ax.set_yticklabels(labelsY, size=3)
+    ax.set_xlim(1, xLen+1)
+    #ax.set_ylim(-1.01, 1.01)
+    ax.set_xticklabels_size(size=3)
+    ax.set_yticklabels_size(size=3)
+
+    ax.grid(True)
+
+    plt.legend(axplts, legendList, loc='upper left', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)
+    plt.savefig(figName+".eps", dpi=120)
+
+
+
+def plot_sorted_kappa(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    counter    = 0
+    axplts     = []
+    legendList = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_title(figTitle)
+    ax.set_xlabel(xLabel, size=5)
+    ax.set_ylabel(yLabel, size=5)
+
+    xLen=0
+    for dataPlot in dataPlotList:
+        mygraph = ax.plot(dataPlot.AllNodesKappa, difg[counter])
+        axplts.append(mygraph)
+        legendList.append(dataPlot.StatsId)
+        counter = counter + 1
+
+        xLen = len(dataPlot.AllNodesKappa)
+
+
+#    labelsX= ax.get_xticklabels()
+#    labelsY= ax.get_yticklabels()
+#
+    ax.set_xlim((1, xLen+1), size=3)
+    ax.set_ylim((-1.01, 1.01), size=3)
+
+    #print ax.get_xticks()
+    ax.set_xticklabels(conv2int(ax.get_xticks()), size=4)
+    ax.set_yticklabels(conv2str(ax.get_yticks()), size=4)
+    
+    ax.grid(True)
+
+    plt.legend(axplts, legendList, loc='upper left', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)
+    plt.savefig(figName+".eps", dpi=120)
+
+def plot_cdfs_prr(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    patchesList=[]
+    legendList = []
+
+    P.figure()
+    for dataPlot in dataPlotList:
+
+        n, bins, patches = P.hist(dataPlot.AllNodesPrr, 1000, normed=1, histtype='step', cumulative=True, linewidth = 1.20)
+        legendList.append(dataPlot.StatsId)
+
+    #print n, bins
+    P.title(figTitle)
+    P.xlabel(xLabel, size=6)
+    P.ylabel(yLabel, size=6)
+
+    P.legend(legendList, loc = 'upper left', shadow = True, prop=matplotlib.font_manager.FontProperties(size=6)) #, loc = (0.01, 0.55)
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+#    #    fig = plt.gcf()
+#    P.set_size_inches(2.5,2.5)
+#    P.savefig(figName+".eps", dpi=120)
+#    P.savefig(figName+'.pdf', dpi=120)
+#    #P.show()
+
+    fig = P.gcf()
+    fig.set_size_inches(2.5,2.5)
+    fig.savefig(figName+".eps", dpi=120)
+    fig.savefig(figName+'.pdf', dpi=120)
+
+def plot_cdfs_beta(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    patchesList=[]
+    legendList = []
+
+    P.figure()
+    for dataPlot in dataPlotList:
+
+        n, bins, patches = P.hist(dataPlot.AllNodesBeta, 1000, normed=1, histtype='step', cumulative=True)
+        legendList.append(dataPlot.StatsId)
+
+    #print n, bins
+    P.title(figTitle)
+    P.xlabel(xLabel)
+    P.ylabel(yLabel)
+
+    #P.legend(legendList, loc = (0.01, 0.55), shadow = True, prop=prop) #, loc = (0.01, 0.55)
+    P.legend(legendList, loc = 'upper left', shadow = True, prop=matplotlib.font_manager.FontProperties(size=4)) #, loc = (0.01, 0.55)
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    P.savefig(figName+'.eps', dpi=120)
+    #P.show()
+
+def plot_cdfs_kappa(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    patchesList=[]
+    legendList = []
+
+    P.figure()
+    for dataPlot in dataPlotList:
+
+        n, bins, patches = P.hist(dataPlot.AllNodesKappa, 1000, normed=1, histtype='step', cumulative=True)
+        legendList.append(dataPlot.StatsId)
+
+    #print n, bins
+    P.title(figTitle)
+    #P.xlabel(xLabel, size=3)
+    P.xlabel(xLabel)
+    P.ylabel(yLabel)
+
+    P.legend(legendList, loc = 'upper left', shadow = True, prop=matplotlib.font_manager.FontProperties(size=6)) #, loc = (0.01, 0.55)
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    #    fig = plt.gcf()
+#    P.set_size_inches(2.5,2.5)
+#    P.savefig(figName+".eps", dpi=120)
+#    P.savefig(figName+'.pdf', dpi=120)
+#    #P.show()
+
+    fig = P.gcf()
+    fig.set_size_inches(2.5,2.5)
+    fig.savefig(figName+".eps", dpi=120)
+    fig.savefig(figName+'.pdf', dpi=120)
+
+def plot_cdfs_burstL(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    patchesList=[]
+    legendList = []
+
+    P.figure()
+    for dataPlot in dataPlotList:
+        burstLen = len(dataPlot.AllNodesBurstL)
+        n, bins, patches = P.hist(dataPlot.AllNodesBurstL, 100, normed=1, histtype='step', cumulative=-1)
+        legendList.append(dataPlot.StatsId)
+
+    #print n, bins
+    P.title(figTitle)
+    #P.xlabel(xLabel, size=3)
+    P.xlabel(xLabel, size=3)
+    P.ylabel(yLabel, size=3)
+
+    P.legend(legendList, loc = 'best', prop=matplotlib.font_manager.FontProperties(size=3)) #, loc = (0.01, 0.55)
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    #    fig = plt.gcf()
+#    P.set_size_inches(2.5,2.5)
+#    P.savefig(figName+".eps", dpi=120)
+#    P.savefig(figName+'.pdf', dpi=120)
+#    #P.show()
+
+    fig = P.gcf()
+    fig.set_size_inches(2.5,2.5)
+    fig.savefig(figName+".eps", dpi=120)
+    fig.savefig(figName+'.pdf', dpi=120)
+
+def plot_cdfs(dataPlotList, xLabel, yLabel, figTitle, figName):
+
+    patchesList=[]
+    legendList = []
+
+    P.figure()
+    for dataPlot in dataPlotList:
+        n, bins, patches = P.hist(dataPlot.data, 100, normed=1, histtype='step', cumulative=True)
+        legendList.append(dataPlot.plotId)
+
+    #print n, bins
+    P.title(figTitle)
+    P.xlabel(xLabel, size=3)
+    P.ylabel(yLabel, size=3)
+
+    P.legend(legendList, loc = (0.01, 0.55), shadow = True) #, loc = (0.01, 0.55)
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    P.savefig(figName+'.eps', dpi=120)
+    #P.show()
+
+
+def plot_cdf_ccdf(cdf_vec, ccdf_vec, axnames, figName):
+
+    counter = 0
+    axplts  = []
+
+    fig = plt.figure()
+    #ax = fig.add_axes([0.115, 0.1, 0.8, 0.8])
+    #ax = fig.add_axes([0.146, 0.1, 0.82, 0.87])
+    ax = fig.add_axes([0.162, 0.12, 0.80, 0.84])
+
+    ax.set_xlabel('LinkIDs', size=5)
+    ax.set_ylabel('CDF and CCDF ', size=5)
+    #ax.set_xlim(0, len(cdf_vec), size=5)
+    #ax.set_xticklabels(np.arange(0,1.1,0.1), size=5)
+    #ax.set_yticklabels(np.arange(0,len(cdf_vec)), size=5)
+
+    mygraph = ax.plot(cdf_vec, difg[counter])    
+    axplts.append(mygraph)
+#    counter = counter + 1
+#
+#    mygraph = ax.plot(ccdf_vec, difg[counter])
+#    axplts.append(mygraph)
+
+    ax.grid(True)
+#    plt.legend( [axplts[0], axplts[1]],
+#            [axnames[0], axnames[1]], loc='best', prop=prop)
+    plt.legend( axplts,
+            axnames[:len(axplts)], loc='best', prop=prop)
+
+    fig = plt.gcf()
+    fig.set_size_inches(2.5,2.5)    
+    plt.savefig(figName+".eps", dpi=120)
+
+
+def show_cdf(Prrs):
+    P.figure()
+   
+    n, bins, patches = P.hist(Prrs, 100, normed=1, histtype='step', cumulative=True)
+    #print n
+    #print bins, n
+
+    ## add a line showing the expected distribution
+    #y = P.normpdf( bins, mu, sigma).cumsum()
+    #y /= y[-1]
+    #l = P.plot(bins, y, 'k--', linewidth=1.5)
+    #
+    ## create a second data-set with a smaller standard deviation
+    #sigma2 = 15.
+    #x = mu + sigma2*P.randn(10000)
+    #
+    #n, bins, patches = P.hist(x, bins=bins, normed=1, histtype='step', cumulative=True)
+    #
+    ## add a line showing the expected distribution
+    #y = P.normpdf( bins, mu, sigma2).cumsum()
+    #y /= y[-1]
+    #l = P.plot(bins, y, 'r--', linewidth=1.5)
+    #
+    ## finally overplot a reverted cumulative histogram
+    n, bins, patches = P.hist(Prrs, bins=bins, normed=1, histtype='step', cumulative=-1)
+
+    print patches
+    #print n, bins
+    P.xlabel('AvgPrSucc')
+    P.ylabel('CDF and CCDF')
+    P.legend(['CDF', 'CCDF'])
+
+    P.grid(True)
+    P.ylim(0, 1.05)
+    P.show()

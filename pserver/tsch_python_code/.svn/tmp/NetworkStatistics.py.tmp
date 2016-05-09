@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os,sys,  getopt, getpass
+import os.path, time
+
+import Node
+from Node import *
+
+class NetworkStatistics:
+    def __init__(self, statsId, noNodes, nColumns, chIDs):
+        self.StatsId = statsId
+        self.NoNodes = noNodes
+        self.NoLinks = None
+        self.NoColumns = nColumns
+        self.ChannelIds = chIDs
+        self.NodeStats  = []        
+        self.ListOfNodes = []
+        self.ListOfFiles = []        
+        self.AllNodesPrr = []
+        #self.TxRxConnectMat = zeros([self.NoNodes, self.NoNodes], int)
+
+
+    def createNodes(self):
+       for n in range(0, self.NoNodes):
+<<<<<<< .mine
+           self.ListOfNodes.append(Node(int(n+1), 640*16))
+
+   def createNodeStatistics(self):
+       pass
+   
+   def create
+
+=======
+           node = Node(int(n+1), 640*16)
+           node.setChannelIds(self.ChannelIds)
+
+           self.ListOfNodes.append(node)
+          
+   
+    def addLinkFiles(self):
+      '''Add the link files to each node'''
+      for fname in self.ListOfFiles:
+          idx = fname.find('link')
+          src_id = fname[(idx+4):-4].split('-')[0]
+
+          for idx, node in enumerate(self.ListOfNodes):
+              if self.ListOfNodes[idx].NodeId == int(src_id):
+                 self.ListOfNodes[idx].addLinkFile(fname)
+
+    def xpto(self):
+       pass>>>>>>> .r63
